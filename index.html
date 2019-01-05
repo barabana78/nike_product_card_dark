@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcat icon" href="favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Nike product</title>
+</head>
+<body>
+  <div class="container">
+      <!--PRODUCT CARD-->
+    <article class="product-card holder">
+      <!--BRAND-->
+      <div class="product-card__brand">
+        <img src="images/logo.png" alt="Nike">
+      </div>
+      <!--/BRAND-->
+      <!--SLIDER-->
+      <div class="slider">
+        <div class="slider__item">
+          <img src="./images/Nike-SB-Stefan-Janoski-Max.png" alt="shoe">
+        </div>
+        <div class="slider__bullets">
+          <img src="./images/bullets.png" alt="bullets">
+        </div>
+      </div>
+      <!--/SLIDER-->
+      <!--INFO-->
+      <div class="product-card__info">
+        <h1 class="product-card__title">Nike SB Stefan<br/>Janoski Max</h1>
+        <p class="product-card__description">Unisex Skateboarding Shoe (Men's Sizing)</p>
+        <!--/INFO-->
+        <!--RATING-->
+        <div class="rating">
+          <img src="./images/stars.png" alt="Rating">
+        </div>
+        <!--/RATING-->
+        <!--FORM-->
+        <form method="post" action="#">
+          <label>
+            <select name="size" required class="product-card__size-field">
+              <option selected disabled>Size</option>
+              <option value="38">38</option>
+              <option value="39">39</option>
+              <option value="40">40</option>
+              <option value="41">41</option>
+              <option value="42">42</option>
+              <option value="43">43</option>
+              <option value="44">44</option>
+              <option value="45">45</option>
+            </select>
+          </label>
+          <label>
+            <select name="qty" class="product-card__qty-field">
+              <option selected disabled>Qty</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </label>
+          <input type="submit" value="Add to cart" class="product-card__submit">
+        </form>
+        <!--/FORM-->
+      </div>
+    </article>
+        <!--/PRODUCT CARD-->
+  </div>
+</body>
+</html>

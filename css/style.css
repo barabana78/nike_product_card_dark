@@ -1,0 +1,99 @@
+/*GENERAL*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  src: url("../fonts/museosansrounded-100-webfont.woff") format('truetype'), url("../fonts/museosansrounded-100-webfont.woff2") format('truetype');
+  font-family: 'MuseoSansRounded100';
+}
+.holder::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*CONTAINER*/
+.container {
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  background-image: url("../images/main_bg.png");
+  padding: 104px 0 105px 0;
+}
+/*PRODUCT-CARD_CONTAINER*/
+.product-card {
+  margin: 0 auto;
+  width: 686px;
+  height: 391px;
+  background-color: #111a28;
+  border-radius: 10px;
+  padding-top: 24px;
+  box-shadow: 0 0 30px rgba(17, 26, 40, 0.9);
+}
+/*BRAND*/
+.product-card__brand {
+  padding-left: 21px;
+  height: 33px;
+}
+/*SLIDER*/
+.slider {
+  padding: 69px 79px 0 36px;
+  float: left;
+}
+.slider__item {
+  height: 159px;
+  width: 329px;
+  margin-bottom: 73px;
+}
+.slider__bullets {
+  text-align: center;
+}
+/*INFO*/
+.product-card__info {
+  font-family: MuseoSansRounded100, Arial, sans-serif;
+  color: #e1e1e1;
+  width: 185px;
+  float: left;
+}
+.product-card__title {
+  font-size: 24px;
+  font-weight: 100;
+  padding-bottom: 11px;
+}
+.product-card__description {
+  font-size: 14px;
+  opacity: 0.54;
+  width: 170px;
+  /*все что не влезло в блок обрезаем*/
+  white-space: nowrap;
+  text-overflow: clip;
+  overflow: hidden;
+}
+.rating {
+  padding: 22px 0;
+}
+/*FORMA*/
+.product-card__size-field,
+.product-card__qty-field,
+.product-card__submit {
+  font-family: MuseoSansRounded100, Arial, sans-serif;
+  font-size: 14px;
+  color: #e1e1e1;
+  border: 1px solid #e1e1e1;
+}
+.product-card__size-field,
+.product-card__qty-field {
+  width: 69px;
+  height: 32px;
+  opacity: 0.54;
+  background-color: #111a28;
+  padding: 0 10px;
+}
+.product-card__submit {
+  width: 184px;
+  height: 40px;
+  margin-top: 29px;
+  background-color: #4c525a;
+  opacity: 0.26;
+}
